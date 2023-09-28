@@ -23,7 +23,7 @@ export default React.memo(function MovieSlider({ data, title }) {
 
   return (
     <Container
-      controlVisibility={`${(<controlVisibility />)}`}
+      controlVisibility={controlVisibility}
       onMouseEnter={() => setControlVisibility(true)}
       onMouseLeave={() => setControlVisibility(false)}
     >
@@ -87,9 +87,13 @@ const Container = styled.div`
     }
     .left {
       left: 0;
+      display: ${({ controlVisibility }) =>
+        controlVisibility ? "flex" : "none"};
     }
     .right {
       right: 0;
+      display: ${({ controlVisibility }) =>
+        controlVisibility ? "flex" : "none"};
     }
     .none {
       display: none;

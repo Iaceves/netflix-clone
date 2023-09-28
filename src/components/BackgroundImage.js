@@ -5,7 +5,7 @@ const BackgroundImage = () => {
   return (
     <BackgroundContainer>
       <img
-        src="https://cdn.mos.cms.futurecdn.net/rDJegQJaCyGaYysj2g5XWY.jpg"
+        src="https://scope.scholastic.com/content/dam/classroom-magazines/scope/issues/2021-22/120121/the-age-of-superheroes/SCO-04-120121-P24-PTSuperheroes-HR.jpg"
         alt="no internet"
       />
     </BackgroundContainer>

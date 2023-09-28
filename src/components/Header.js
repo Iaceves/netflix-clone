@@ -9,7 +9,7 @@ const Header = (props) => {
     <HeaderContainer>
       <div className="logo">
         <img
-          src="https://res.cloudinary.com/ehizeex-shop/image/upload/v1668265433/NetflixApp/2560px-Netflix_2015_logo.svg_rbicwl_knwp6f.png"
+          src="https://static.vecteezy.com/system/resources/previews/020/336/373/original/netflix-logo-netflix-icon-free-free-vector.jpg"
           alt="no internet connection"
         />
       </div>

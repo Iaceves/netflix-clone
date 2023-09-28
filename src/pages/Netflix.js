@@ -7,7 +7,6 @@ import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 
 import TopNav from "../components/TopNav";
-// import Card from "../components/Card";
 import { fetchMovies, getGenres } from "../store";
 import SliderContainer from "../components/SliderContainer";
 
@@ -29,14 +28,12 @@ const Netflix = () => {
     if (genresLoaded) {
       dispatch(fetchMovies({ type: "all" }));
     }
-  }, []);
+  }, [genresLoaded]);
 
   window.onscroll = () => {
     setIsScrolled(window.pageYOffset === 0 ? false : true);
     return () => (window.onscroll = null);
   };
-
-  // console.log(movies);
 
   return (
     <HeroContainer>

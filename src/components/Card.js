@@ -7,7 +7,7 @@ import { BiChevronDown } from "react-icons/bi";
 import { BsCheck } from "react-icons/bs";
 import { useNavigate } from "react-router-dom";
 
-export default React.memo(function Card({ movieData }) {
+export default React.memo(function Card({ movieData, index }) {
   const [onHovered, setOnHovered] = useState(false);
   const navigate = useNavigate();
 
@@ -58,7 +58,7 @@ export default React.memo(function Card({ movieData }) {
             <div className="genres">
               <ul>
                 {movieData.genres.map((genre) => {
-                  return <li key={genre.id}>{genre}</li>;
+                  return <li key={genre}>{genre}</li>;
                 })}
               </ul>
             </div>

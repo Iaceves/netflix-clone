@@ -25,7 +25,7 @@ const TopNav = (isScrolled) => {
         <div className="leftSide">
           <div className="logo">
             <img
-              src="https://res.cloudinary.com/ehizeex-shop/image/upload/v1668265433/NetflixApp/2560px-Netflix_2015_logo.svg_rbicwl_knwp6f.png"
+              src="https://download.logo.wine/logo/Netflix/Netflix-Logo.wine.png"
               alt="logo"
             />
           </div>
@@ -82,7 +82,7 @@ const NavContainer = styled.div`
         align-items: center;
       }
       img {
-        height: 2rem;
+        height: 7rem;
         width: 10rem;
       }
     }
